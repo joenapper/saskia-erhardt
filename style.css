@@ -42,7 +42,7 @@ section {
 }
 .about,
 .services,
-.skills,
+.experience,
 .blogs,
 .contact,
 footer {
@@ -50,7 +50,7 @@ footer {
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.experience .experience-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -320,6 +320,7 @@ section .title::after {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
+  float: right;
 }
 
 /* Services --------------- */
@@ -371,26 +372,26 @@ section .title::after {
 
 /* Skills --------------- */
 
-.skills .title::after {
+.experience .title::after {
   content: "what i know";
 }
-.skills .skills-content .column {
+.experience .experience-content .column {
   width: calc(50% - 30px);
 }
 
-.skills .skills-content .left img {
+.experience .experience-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
 
-.skills .skills-content .right .text {
+.experience .experience-content .right .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.skills .skills-content .right p {
+.experience .experience-content .right p {
   text-align: justify;
 }
 /* .skills .skills-content .right a {
@@ -410,19 +411,19 @@ section .title::after {
   background: none;
 } */
 
-.skills .skills-content .right .logo-container {
+.experience .experience-content .right .logo-container {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
 }
 
-.skills .skills-content .right .logo-container .logo img {
+.experience .experience-content .right .logo-container .logo img {
   height: 50px;
   width: 50px;
   transition: all 0.3s ease;
 }
 
-.skills .skills-content .right .logo-container .logo img:hover {
+.experience .experience-content .right .logo-container .logo img:hover {
   transform: scale(1.1);
 }
 
@@ -635,7 +636,7 @@ footer span a:hover {
 }
 
 @media (max-width: 1104px) {
-  .skills .skills-content .left img,
+  .experience .experience-content .left img,
   .about .about-content .right img {
     height: 350px;
     width: 350px;
@@ -694,7 +695,7 @@ footer span a:hover {
     width: 100%;
   }
 
-  .skills .skills-content .left,
+  .experience .experience-content .left,
   .about .about-content .right {
     display: flex;
     justify-content: center;
@@ -707,7 +708,7 @@ footer span a:hover {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-  .skills .skills-content .column,
+  .experience .experience-content .column,
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
@@ -740,7 +741,7 @@ footer span a:hover {
     font-size: 27px;
   }
   .about .about-content .left .text,
-  .skills .skills-content .right .text {
+  .experience .experience-content .right .text {
     font-size: 19px;
   }
   .contact .right form .fields {
